@@ -1,8 +1,25 @@
 aid: crossbar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crossbar.png
 name: Crossbar
-description: 'Crossbar is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: hardtech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Crossbar, Inc. is a Santa Clara semiconductor company founded in 2010 that develops resistive
+  random-access memory (ReRAM), a non-volatile memory built on RRAM patents licensed from the University
+  of Michigan. Its CMOS-compatible ReRAM targets faster write performance, lower power consumption, and
+  higher endurance than NAND flash at roughly half the die size, and is offered as embedded and standalone
+  memory IP to OEMs and system-on-chip developers across consumer, mobile, enterprise, industrial, and
+  IoT markets. Crossbar is a hardtech portfolio company backed by Kleiner Perkins. As a silicon-IP provider
+  it exposes no public developer API surface; this profile carries company identity and domain-security
+  posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/crossbar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Hardtech
+- Semiconductors
+- Memory
+- ReRAM
+- Storage
+- IoT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/crossbar-domain-security.yml
 - type: Website
   url: https://www.crossbar-inc.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
